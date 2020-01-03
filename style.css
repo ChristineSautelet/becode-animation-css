@@ -1,0 +1,27 @@
+/*Ces styles ne sont là que pour la présentation*/
+
+body{
+    background-color: black;
+}
+.conteneur{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+}
+p{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 40px;
+    border: solid 4px white;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+p:hover{
+    background-color: white;
+    color: black;
+}
+
