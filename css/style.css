@@ -14,8 +14,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0px);
+          transform: translateX(-50%) translateY(-50%) translateZ(0px);
   background-color: #fff;
   -webkit-box-shadow: 0x 0px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0x 0px 20px rgba(0, 0, 0, 0.1);
@@ -56,12 +56,29 @@ body {
 }
 
 .card__thumb {
-  height: 277px;
+  height: 274px;
+  overflow: hidden;
   background-color: black;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
 }
 
 .card__thumb img {
   display: block;
   opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card__thumb img {
+  opacity: 0.6;
+}
+
+.card:hover .card__thumb {
+  height: 90px;
+}
+
+.card:hover .card__thumb img {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */

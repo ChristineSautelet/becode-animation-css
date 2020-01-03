@@ -13,7 +13,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%) translateZ(0px);
     background-color: #fff;
     box-shadow: 0x 0px 20px rgba(0,0,0,0.1);
     transition: box-shadow $duration;
@@ -46,11 +46,23 @@ body{
     font-size: 12px;
 }
 .card__thumb{
-    height: 277px;
+    height: 274px;
+    overflow: hidden;
     background-color: black;
+    transition:height $duration;
     img{
         display:block;
         opacity: 1;
+        transition: opacity $duration;
     }
-    
+    .card:hover & img{
+        opacity: 0.6;
+    }
+    .card:hover &{
+        height: 90px;
+    }
 }
+.card:hover .card__thumb img{
+    opacity: 0.8;
+}
+
