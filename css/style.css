@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #e4e4e4;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  -webkit-box-shadow: 0x 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0x 0px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card__date {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  width: 57px;
+  height: 56px;
+  background-color: #e74c3d;
+  color: white;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  padding-top: 7px;
+  border-radius: 50%;
+}
+
+.card__date__day {
+  padding-top: 8px;
+  display: block;
+  font-size: 14px;
+}
+
+.card__date__month {
+  font-size: 12px;
+}
+
+.card__thumb {
+  height: 277px;
+  background-color: black;
+}
+
+.card__thumb img {
+  display: block;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
